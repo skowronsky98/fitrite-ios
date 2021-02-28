@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  fitrite
-//
-//  Created by Oskar Skowronski on 17/02/2021.
-//
-
 import UIKit
 import CoreData
 

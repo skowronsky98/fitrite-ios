@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B76470F825E13650003054A6 /* ShoeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76470F725E13650003054A6 /* ShoeCell.swift */; };
+		B764710E25E13E95003054A6 /* Shoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B764710D25E13E95003054A6 /* Shoes.swift */; };
+		B764711925E14071003054A6 /* Brands.swift in Sources */ = {isa = PBXBuildFile; fileRef = B764711825E14071003054A6 /* Brands.swift */; };
+		B764712225E15692003054A6 /* ShoesCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B764712125E15692003054A6 /* ShoesCollectionViewModel.swift */; };
+		B788C82125E947C500F1734D /* ShoesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788C82025E947C500F1734D /* ShoesCollection.swift */; };
+		B788C83025E952A900F1734D /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788C82F25E952A900F1734D /* Array+Identifiable.swift */; };
+		B788C84225E985FE00F1734D /* BrandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788C84125E985FE00F1734D /* BrandView.swift */; };
 		B7CA773E25DDA4D100ABF820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA773D25DDA4D100ABF820 /* AppDelegate.swift */; };
 		B7CA774025DDA4D100ABF820 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA773F25DDA4D100ABF820 /* SceneDelegate.swift */; };
-		B7CA774225DDA4D100ABF820 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA774125DDA4D100ABF820 /* ContentView.swift */; };
+		B7CA774225DDA4D100ABF820 /* ShoeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA774125DDA4D100ABF820 /* ShoeCollectionView.swift */; };
 		B7CA774525DDA4D100ABF820 /* fitrite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7CA774325DDA4D100ABF820 /* fitrite.xcdatamodeld */; };
 		B7CA774725DDA4D300ABF820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7CA774625DDA4D300ABF820 /* Assets.xcassets */; };
 		B7CA774A25DDA4D300ABF820 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7CA774925DDA4D300ABF820 /* Preview Assets.xcassets */; };
@@ -36,10 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B76470F725E13650003054A6 /* ShoeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeCell.swift; sourceTree = "<group>"; };
+		B764710D25E13E95003054A6 /* Shoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoes.swift; sourceTree = "<group>"; };
+		B764711825E14071003054A6 /* Brands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brands.swift; sourceTree = "<group>"; };
+		B764712125E15692003054A6 /* ShoesCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesCollectionViewModel.swift; sourceTree = "<group>"; };
+		B788C82025E947C500F1734D /* ShoesCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesCollection.swift; sourceTree = "<group>"; };
+		B788C82F25E952A900F1734D /* Array+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
+		B788C84125E985FE00F1734D /* BrandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandView.swift; sourceTree = "<group>"; };
 		B7CA773A25DDA4D100ABF820 /* fitrite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fitrite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7CA773D25DDA4D100ABF820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7CA773F25DDA4D100ABF820 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B7CA774125DDA4D100ABF820 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B7CA774125DDA4D100ABF820 /* ShoeCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeCollectionView.swift; sourceTree = "<group>"; };
 		B7CA774425DDA4D100ABF820 /* fitrite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fitrite.xcdatamodel; sourceTree = "<group>"; };
 		B7CA774625DDA4D300ABF820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7CA774925DDA4D300ABF820 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -78,6 +92,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B764710C25E13E85003054A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B764710D25E13E95003054A6 /* Shoes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B788C82E25E9528D00F1734D /* Utills */ = {
+			isa = PBXGroup;
+			children = (
+				B788C82F25E952A900F1734D /* Array+Identifiable.swift */,
+			);
+			path = Utills;
+			sourceTree = "<group>";
+		};
+		B788C83725E9594400F1734D /* ShoesCollection */ = {
+			isa = PBXGroup;
+			children = (
+				B7CA774125DDA4D100ABF820 /* ShoeCollectionView.swift */,
+				B788C82025E947C500F1734D /* ShoesCollection.swift */,
+				B764712125E15692003054A6 /* ShoesCollectionViewModel.swift */,
+			);
+			path = ShoesCollection;
+			sourceTree = "<group>";
+		};
+		B788C84625EBC84D00F1734D /* Brands */ = {
+			isa = PBXGroup;
+			children = (
+				B764711825E14071003054A6 /* Brands.swift */,
+				B788C84125E985FE00F1734D /* BrandView.swift */,
+			);
+			path = Brands;
+			sourceTree = "<group>";
+		};
 		B7CA773125DDA4D000ABF820 = {
 			isa = PBXGroup;
 			children = (
@@ -101,9 +150,13 @@
 		B7CA773C25DDA4D100ABF820 /* fitrite */ = {
 			isa = PBXGroup;
 			children = (
+				B788C84625EBC84D00F1734D /* Brands */,
+				B788C83725E9594400F1734D /* ShoesCollection */,
+				B788C82E25E9528D00F1734D /* Utills */,
+				B764710C25E13E85003054A6 /* Models */,
 				B7CA773D25DDA4D100ABF820 /* AppDelegate.swift */,
 				B7CA773F25DDA4D100ABF820 /* SceneDelegate.swift */,
-				B7CA774125DDA4D100ABF820 /* ContentView.swift */,
+				B76470F725E13650003054A6 /* ShoeCell.swift */,
 				B7CA774625DDA4D300ABF820 /* Assets.xcassets */,
 				B7CA774B25DDA4D300ABF820 /* LaunchScreen.storyboard */,
 				B7CA774E25DDA4D300ABF820 /* Info.plist */,
@@ -269,10 +322,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B764710E25E13E95003054A6 /* Shoes.swift in Sources */,
+				B76470F825E13650003054A6 /* ShoeCell.swift in Sources */,
 				B7CA773E25DDA4D100ABF820 /* AppDelegate.swift in Sources */,
+				B788C82125E947C500F1734D /* ShoesCollection.swift in Sources */,
 				B7CA774025DDA4D100ABF820 /* SceneDelegate.swift in Sources */,
-				B7CA774225DDA4D100ABF820 /* ContentView.swift in Sources */,
+				B788C84225E985FE00F1734D /* BrandView.swift in Sources */,
+				B788C83025E952A900F1734D /* Array+Identifiable.swift in Sources */,
+				B764711925E14071003054A6 /* Brands.swift in Sources */,
+				B7CA774225DDA4D100ABF820 /* ShoeCollectionView.swift in Sources */,
 				B7CA774525DDA4D100ABF820 /* fitrite.xcdatamodeld in Sources */,
+				B764712225E15692003054A6 /* ShoesCollectionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

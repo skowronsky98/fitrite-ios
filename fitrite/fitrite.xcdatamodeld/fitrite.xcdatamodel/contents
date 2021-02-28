@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="20D74" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="B" representedClassName="B" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="image" optional="YES" attributeType="URI"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="shoe" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="S" inverseName="brand" inverseEntity="S"/>
+    </entity>
+    <entity name="S" representedClassName="S" syncable="YES" codeGenerationType="class">
+        <attribute name="factor" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="image" optional="YES" attributeType="URI"/>
+        <attribute name="model" optional="YES" attributeType="String"/>
+        <relationship name="brand" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="B" inverseName="shoe" inverseEntity="B"/>
+    </entity>
+    <elements>
+        <element name="B" positionX="-54" positionY="-9" width="128" height="89"/>
+        <element name="S" positionX="-329.800537109375" positionY="18.93170166015625" width="128" height="104"/>
+    </elements>
 </model>
