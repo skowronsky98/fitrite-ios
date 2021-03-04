@@ -14,6 +14,7 @@
 		B788C82125E947C500F1734D /* ShoesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788C82025E947C500F1734D /* ShoesCollection.swift */; };
 		B788C83025E952A900F1734D /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788C82F25E952A900F1734D /* Array+Identifiable.swift */; };
 		B788C84225E985FE00F1734D /* BrandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788C84125E985FE00F1734D /* BrandView.swift */; };
+		B788C84F25F00E3800F1734D /* ShoeCollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788C84E25F00E3800F1734D /* ShoeCollectionItem.swift */; };
 		B7CA773E25DDA4D100ABF820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA773D25DDA4D100ABF820 /* AppDelegate.swift */; };
 		B7CA774025DDA4D100ABF820 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA773F25DDA4D100ABF820 /* SceneDelegate.swift */; };
 		B7CA774225DDA4D100ABF820 /* ShoeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA774125DDA4D100ABF820 /* ShoeCollectionView.swift */; };
@@ -50,6 +51,7 @@
 		B788C82025E947C500F1734D /* ShoesCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesCollection.swift; sourceTree = "<group>"; };
 		B788C82F25E952A900F1734D /* Array+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
 		B788C84125E985FE00F1734D /* BrandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandView.swift; sourceTree = "<group>"; };
+		B788C84E25F00E3800F1734D /* ShoeCollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeCollectionItem.swift; sourceTree = "<group>"; };
 		B7CA773A25DDA4D100ABF820 /* fitrite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fitrite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7CA773D25DDA4D100ABF820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7CA773F25DDA4D100ABF820 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				B7CA774125DDA4D100ABF820 /* ShoeCollectionView.swift */,
 				B788C82025E947C500F1734D /* ShoesCollection.swift */,
 				B764712125E15692003054A6 /* ShoesCollectionViewModel.swift */,
+				B788C84E25F00E3800F1734D /* ShoeCollectionItem.swift */,
 			);
 			path = ShoesCollection;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				B764711925E14071003054A6 /* Brands.swift in Sources */,
 				B7CA774225DDA4D100ABF820 /* ShoeCollectionView.swift in Sources */,
 				B7CA774525DDA4D100ABF820 /* fitrite.xcdatamodeld in Sources */,
+				B788C84F25F00E3800F1734D /* ShoeCollectionItem.swift in Sources */,
 				B764712225E15692003054A6 /* ShoesCollectionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

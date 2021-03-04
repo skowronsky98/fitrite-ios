@@ -1,17 +1,25 @@
 import Foundation
 
 struct ShoesCollection{
-    var shoesCollection: [Shoe]
+    var shoesCollection: [MyShoe] = Array()
     
-    func choose(_ shoe: Shoe){
-        print("shoe chosen \(shoe.model)")
+    func choose(_ myShoe: MyShoe){
+        print("shoe chosen \(myShoe.shoe.model)")
     }
-    mutating func remove(shoe: Shoe){
-        let index = shoesCollection.firstIndex(matching: shoe)!
+    mutating func remove(myShoe: MyShoe){
+        let index = shoesCollection.firstIndex(matching: myShoe)!
         shoesCollection.remove(at: index)
     }
     
-    init(shoesCollection : [Shoe]) {
+    init(_ shoesCollection : [MyShoe]) {
         self.shoesCollection = shoesCollection
+    }
+    
+    init (){}
+    
+    struct MyShoe : Identifiable {
+        let id : String
+        let shoe: Shoe
+        var size: Double
     }
 }
