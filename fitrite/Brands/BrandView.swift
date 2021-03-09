@@ -1,10 +1,3 @@
-//
-//  BrandView.swift
-//  fitrite
-//
-//  Created by Oskar Skowronski on 26/02/2021.
-//
-
 import SwiftUI
 
 struct BrandView: View {

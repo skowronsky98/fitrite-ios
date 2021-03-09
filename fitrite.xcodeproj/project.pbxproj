@@ -10,7 +10,7 @@
 		B76470F825E13650003054A6 /* ShoeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76470F725E13650003054A6 /* ShoeCell.swift */; };
 		B764710E25E13E95003054A6 /* Shoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B764710D25E13E95003054A6 /* Shoes.swift */; };
 		B764711925E14071003054A6 /* Brands.swift in Sources */ = {isa = PBXBuildFile; fileRef = B764711825E14071003054A6 /* Brands.swift */; };
-		B764712225E15692003054A6 /* ShoesCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B764712125E15692003054A6 /* ShoesCollectionViewModel.swift */; };
+		B764712225E15692003054A6 /* ShoesCollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B764712125E15692003054A6 /* ShoesCollectionManager.swift */; };
 		B788C82125E947C500F1734D /* ShoesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788C82025E947C500F1734D /* ShoesCollection.swift */; };
 		B788C83025E952A900F1734D /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788C82F25E952A900F1734D /* Array+Identifiable.swift */; };
 		B788C84225E985FE00F1734D /* BrandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788C84125E985FE00F1734D /* BrandView.swift */; };
@@ -47,7 +47,7 @@
 		B76470F725E13650003054A6 /* ShoeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeCell.swift; sourceTree = "<group>"; };
 		B764710D25E13E95003054A6 /* Shoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoes.swift; sourceTree = "<group>"; };
 		B764711825E14071003054A6 /* Brands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brands.swift; sourceTree = "<group>"; };
-		B764712125E15692003054A6 /* ShoesCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesCollectionViewModel.swift; sourceTree = "<group>"; };
+		B764712125E15692003054A6 /* ShoesCollectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesCollectionManager.swift; sourceTree = "<group>"; };
 		B788C82025E947C500F1734D /* ShoesCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesCollection.swift; sourceTree = "<group>"; };
 		B788C82F25E952A900F1734D /* Array+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
 		B788C84125E985FE00F1734D /* BrandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandView.swift; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 			children = (
 				B7CA774125DDA4D100ABF820 /* ShoeCollectionView.swift */,
 				B788C82025E947C500F1734D /* ShoesCollection.swift */,
-				B764712125E15692003054A6 /* ShoesCollectionViewModel.swift */,
+				B764712125E15692003054A6 /* ShoesCollectionManager.swift */,
 				B788C84E25F00E3800F1734D /* ShoeCollectionItem.swift */,
 			);
 			path = ShoesCollection;
@@ -336,7 +336,7 @@
 				B7CA774225DDA4D100ABF820 /* ShoeCollectionView.swift in Sources */,
 				B7CA774525DDA4D100ABF820 /* fitrite.xcdatamodeld in Sources */,
 				B788C84F25F00E3800F1734D /* ShoeCollectionItem.swift in Sources */,
-				B764712225E15692003054A6 /* ShoesCollectionViewModel.swift in Sources */,
+				B764712225E15692003054A6 /* ShoesCollectionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

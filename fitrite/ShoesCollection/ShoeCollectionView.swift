@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @EnvironmentObject private var shoeCollectionVM : ShoesCollectionViewModel
+    @EnvironmentObject private var shoeCollectionVM : ShoesCollectionManager
     
     var body: some View {
         
@@ -23,6 +23,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environmentObject(ShoesCollectionViewModel())
+        ContentView().environmentObject(ShoesCollectionManager())
     }
 }

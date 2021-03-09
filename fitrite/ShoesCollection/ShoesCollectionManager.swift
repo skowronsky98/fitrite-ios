@@ -1,10 +1,9 @@
 import Foundation
 
-class ShoesCollectionViewModel: ObservableObject {
+class ShoesCollectionManager: ObservableObject {
     
     @Published private var shoesCollectionModel : ShoesCollection
 
-    
     
     init() {
         shoesCollectionModel = ShoesCollection(
@@ -16,16 +15,6 @@ class ShoesCollectionViewModel: ObservableObject {
                 ShoesCollection.MyShoe(id: "5", shoe: Shoes.shoes[1], size: 9.5))
             )
     }
-    
-    
-    // MARK: - Temporary
-//    func generateShoesCollection() -> [ShoesCollection.MyShoe]{
-//
-//        )
-//
-//
-//        return collection
-//    }
     
     func remove(shoe: ShoesCollection.MyShoe) {
         shoesCollectionModel.remove(myShoe: shoe)
