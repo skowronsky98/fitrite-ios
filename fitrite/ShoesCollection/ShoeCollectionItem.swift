@@ -10,7 +10,7 @@ struct ShoeCollectionItem: View {
             RoundedRectangle(cornerRadius: 25, style: .continuous)
                 .foregroundColor(.white)
                 .shadow(radius: 5)
-                .padding(.horizontal,8)
+               
                 
             HStack{
                 Image("\(myShoe.shoe.image)")
@@ -40,7 +40,7 @@ struct ShoeCollectionItem: View {
                     .padding(.trailing,24)
                         
             }
-            .padding(.horizontal,8)
+            
 
         }
         .fixedSize(horizontal: false, vertical: true)
