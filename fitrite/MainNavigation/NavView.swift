@@ -1,10 +1,3 @@
-//
-//  NavView.swift
-//  fitrite
-//
-//  Created by Oskar Skowronski on 11/03/2021.
-//
-
 import SwiftUI
 
 struct NavView: View {
@@ -20,14 +13,13 @@ struct NavView: View {
                    Text("Home")
                  }
             
-            Text("The content of the second view")
+            DiscoverView()
               .tabItem {
-                 Image(systemName: "bag.fill")
-                 Text("Shop")
+                 Image(systemName: "newspaper.fill")
+                 Text("Discover")
               }
             
-
-              Text("The content of the third view")
+            ProfileView()
                 .tabItem {
                    Image(systemName: "person.fill")
                    Text("Profile")

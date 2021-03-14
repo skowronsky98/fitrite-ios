@@ -1,15 +1,21 @@
+//
+//  ShoeListItemView.swift
+//  fitrite
+//
+//  Created by Oskar Skowronski on 14/03/2021.
+//
+
 import SwiftUI
 
-struct ShoeCell: View {
-    
+struct ShoeListItemView: View {
     var shoe : Shoe
-    
+
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 25, style: .continuous)
                 .foregroundColor(.white)
                 .shadow(radius: 5)
-                .padding(.horizontal,8)
+               
                 
             HStack{
                 Image("\(shoe.image)")
@@ -33,22 +39,17 @@ struct ShoeCell: View {
                 Spacer()
             
               
-                Text("9 US")
-                    .font(.headline)
-                    .bold()
-                    .padding(.trailing,24)
                         
             }
-            .padding(.horizontal,8)
+            
 
         }
         .fixedSize(horizontal: false, vertical: true)
         .padding(.vertical,4)
     }
 }
-
-struct ShoeCell_Previews: PreviewProvider {
+struct ShoeListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ShoeCell(shoe: ShoesList.shoes[0])
+        ShoeListItemView(shoe: ShoesList.shoes[0])
     }
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BrandItemView: View {
-    
+
     var brand : Brand
     
     var body: some View {
