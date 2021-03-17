@@ -1,11 +1,14 @@
 import Foundation
 
 struct BrandList {
-    static var brands = [Brand](
-        arrayLiteral: Brand(id: "1", name: "Nike", image: "nike"),
-        Brand(id: "2", name: "Adidas", image: "adidas"),
-        Brand(id: "3", name: "Jordan", image: "nike")
-    )
+    
+    var brands: [Brand] = Array()
+    
+    init(_ brands : [Brand]) {
+        self.brands.append(contentsOf: brands)
+    }
+    
+    init(){}
 }
 
 struct Brand: Codable, Identifiable{

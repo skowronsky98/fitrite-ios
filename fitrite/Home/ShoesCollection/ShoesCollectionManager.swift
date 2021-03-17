@@ -4,28 +4,38 @@ class ShoesCollectionManager: ObservableObject {
     
     @Published private var shoesCollectionModel : ShoesCollection
     
-    @Published private var myShoe: ShoesCollection.MyShoe? = nil
+    
+    
+    var myShoeTmp : MyShoe?
+    
     
     init() {
         shoesCollectionModel = ShoesCollection(
             Array(
-                arrayLiteral: ShoesCollection.MyShoe(id: "1", shoe: ShoesList.shoes[0], size: 9.0),
-                ShoesCollection.MyShoe(id: "2", shoe: ShoesList.shoes[1], size: 8.0),
-                ShoesCollection.MyShoe(id: "3", shoe: ShoesList.shoes[2], size: 8.5),
-                ShoesCollection.MyShoe(id: "4", shoe: ShoesList.shoes[0], size: 10.0),
-                ShoesCollection.MyShoe(id: "5", shoe: ShoesList.shoes[1], size: 9.5))
+                arrayLiteral: MyShoe(id: "1", shoe: Shoe(id: "1", model: "Air Max 97", brand: Brand(id: "1", name: "Nike", image: "nike"), image: "shoe"), size: 8.0),
+                MyShoe(id: "2", shoe: Shoe(id: "2", model: "Air Force 1", brand: Brand(id: "1", name: "Nike", image: "nike"), image: "shoe"), size: 8.0),
+                MyShoe(id: "3", shoe: Shoe(id: "2", model: "Air Force 1", brand: Brand(id: "1", name: "Nike", image: "nike"), image: "shoe"), size: 8.0),
+                MyShoe(id: "4", shoe: Shoe(id: "3", model: "Air Force 1", brand: Brand(id: "2", name: "Adidas", image: "adidas"), image: "shoe"), size: 8.0)
             )
+                
+                )
     }
     
-    func remove(shoe: ShoesCollection.MyShoe) {
+    func remove(shoe: MyShoe) {
         shoesCollectionModel.remove(myShoe: shoe)
     }
     
-    func addShoeToCollection(myShoe: ShoesCollection.MyShoe) {
+    
+    func randomString(length: Int) -> String {
+        let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        return String((0..<length).map{ _ in letters.randomElement()! })
+    }
+    
+    func addShoeToCollection(myShoe: MyShoe) {
         shoesCollectionModel.addShoeToCollection(myShoe)
     }
     
-    var shoesCollection : [ShoesCollection.MyShoe]{
+    var shoesCollection : [MyShoe]{
         shoesCollectionModel.shoesCollection
     }
     

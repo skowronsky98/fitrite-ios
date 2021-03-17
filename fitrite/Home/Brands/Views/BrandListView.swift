@@ -3,21 +3,18 @@ import SwiftUI
 struct BrandListView: View {
     
     @EnvironmentObject private var shoeCollectionManager : ShoesCollectionManager
-    var myShoe : ShoesCollection.MyShoe
+    @ObservedObject var brandListManager : BrandListManager
     
     var body: some View{
         
-        
-        
-        
         List{
-            ForEach(BrandList.brands){ brand in
+            ForEach(brandListManager.brandList){ brand in
                 
                 ZStack {
                     BrandItemView(brand: brand)
                     
                     NavigationLink(
-                        destination: MyShoeDetailView(myShoe: myShoe)){
+                        destination: Text("Shoes search")){
                         EmptyView()
                     }
                 }
@@ -30,6 +27,6 @@ struct BrandListView: View {
 
 struct BrandListView_Previews: PreviewProvider {
     static var previews: some View {
-        BrandListView(myShoe: ShoesCollection.MyShoe(id: "1", shoe: ShoesList.shoes[0], size: 9.0))
+        BrandListView(brandListManager: BrandListManager())
     }
 }

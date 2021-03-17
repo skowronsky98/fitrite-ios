@@ -5,24 +5,25 @@ struct NavView: View {
     let collection = ShoesCollectionManager()
     
     var body: some View {
+        
         TabView {
-        ShoeCollectionView()
-            .environmentObject(collection)
+            ShoeCollectionView()
+                .environmentObject(collection)
                 .tabItem {
-                   Image(systemName: "house.fill")
-                   Text("Home")
-                 }
+                    Image(systemName: "house.fill")
+                    Text("Home")
+                }
             
             DiscoverView()
-              .tabItem {
-                 Image(systemName: "newspaper.fill")
-                 Text("Discover")
-              }
+                .tabItem {
+                    Image(systemName: "newspaper.fill")
+                    Text("Discover")
+                }
             
             ProfileView()
                 .tabItem {
-                   Image(systemName: "person.fill")
-                   Text("Profile")
+                    Image(systemName: "person.fill")
+                    Text("Profile")
                 }
         }
     }

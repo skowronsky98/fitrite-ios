@@ -9,29 +9,29 @@ import SwiftUI
 
 struct ShoesListView: View {
     
-    var myShoe: ShoesCollection.MyShoe
+    var myShoe: MyShoe
     
     var body: some View {
-        
-        List{
-            ForEach(ShoesList.shoes){ shoe in
-                
-                ZStack {
-                    ShoeListItemView(shoe: shoe)
-                    
-                    NavigationLink(
-                        destination: MyShoeDetailView(myShoe: myShoe)){
-                        EmptyView()
-                    }
-                }
-            }
-        }.navigationBarTitle("Chose Model")
+        Text("siema")
+//                List{
+//                    ForEach(ShoesList.shoes){ shoe in
+//
+//                        ZStack {
+//                            ShoeListItemView(shoe: shoe)
+//
+//                            NavigationLink(
+//                                destination: MyShoeDetailView(myShoe: myShoe)){
+//                                EmptyView()
+//                            }
+//                        }
+//                    }
+//                }.navigationBarTitle("Chose Model")
         
     }
 }
 
 struct ShoesListView_Previews: PreviewProvider {
     static var previews: some View {
-        ShoesListView(myShoe: ShoesCollection.MyShoe(id: "1", shoe: ShoesList.shoes[0], size: 9.0))
+        ShoesListView(myShoe: MyShoe(id: "1", shoe: Shoe(id: "1", model: "Air Max 97", brand: Brand(id: "1", name: "Nike", image: "nike"), image: "shoe"), size: 12))
     }
 }

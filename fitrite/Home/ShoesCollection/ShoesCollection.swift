@@ -21,9 +21,11 @@ struct ShoesCollection{
     
     init (){}
     
-    struct MyShoe : Identifiable {
-        let id : String
-        let shoe: Shoe?
-        var size: Double?
-    }
+   
+}
+
+struct MyShoe : Identifiable {
+    let id : String
+    let shoe: Shoe
+    var size: Double
 }

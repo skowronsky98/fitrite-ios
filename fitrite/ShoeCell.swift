@@ -49,6 +49,6 @@ struct ShoeCell: View {
 
 struct ShoeCell_Previews: PreviewProvider {
     static var previews: some View {
-        ShoeCell(shoe: ShoesList.shoes[0])
+        ShoeCell(shoe: Shoe(id: "1", model: "Air Max 97", brand: Brand(id: "1", name: "Nike", image: "nike"), image: "shoe"))
     }
 }

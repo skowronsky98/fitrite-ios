@@ -3,7 +3,8 @@ import SwiftUI
 struct ShoeCollectionView: View {
     
     @EnvironmentObject private var shoeCollectionManager : ShoesCollectionManager
-    @State var isLinkActive = false
+    @State var isAddNewShoeLinkActive = false
+    
     var body: some View {
         
         NavigationView{
@@ -14,7 +15,8 @@ struct ShoeCollectionView: View {
                         ShoeCollectionItem(myShoe: shoe)
                         
                         NavigationLink(
-                            destination: BrandListView(myShoe: shoe)){
+                            destination: BrandListView(brandListManager: BrandListManager())){
+                            
                             EmptyView()
                         }
                         
@@ -29,10 +31,10 @@ struct ShoeCollectionView: View {
             .listStyle(PlainListStyle())
             .navigationBarTitle("Collection")
             .navigationBarItems(trailing:
-                                    NavigationLink(destination: Text("add"), isActive : $isLinkActive){
+                                    NavigationLink(destination: BrandListView(brandListManager: BrandListManager()), isActive : $isAddNewShoeLinkActive){
                                         Button(action: {
                                             
-                                            self.isLinkActive = true
+                                            self.isAddNewShoeLinkActive = true
                                         }) {
                                             Image(systemName: "plus.app")
                                                 .font(.largeTitle)

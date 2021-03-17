@@ -50,6 +50,6 @@ struct ShoeListItemView: View {
 }
 struct ShoeListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ShoeListItemView(shoe: ShoesList.shoes[0])
+        ShoeListItemView(shoe: Shoe(id: "1", model: "Air Max 97", brand: Brand(id: "1", name: "Nike", image: "nike"), image: "shoe"))
     }
 }

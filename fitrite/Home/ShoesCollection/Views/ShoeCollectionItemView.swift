@@ -3,7 +3,7 @@ import SwiftUI
 
 struct ShoeCollectionItem: View {
 
-    var myShoe : ShoesCollection.MyShoe
+    var myShoe : MyShoe
 
     var body: some View {
         ZStack{
@@ -13,18 +13,18 @@ struct ShoeCollectionItem: View {
                
                 
             HStack{
-                Image("\(myShoe.shoe!.image)")
+                Image("\(myShoe.shoe.image)")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 120, height: 120)
                 
                 VStack(alignment: .leading) {
-                    Text("\(myShoe.shoe!.model)")
+                    Text("\(myShoe.shoe.model)")
                         .font(.headline)
                         .bold()
                         .padding(.bottom,1)
                         
-                    Text("\(myShoe.shoe!.brand.name)")
+                    Text("\(myShoe.shoe.brand.name)")
                         .font(.subheadline)
                     
                     Spacer()
@@ -34,7 +34,7 @@ struct ShoeCollectionItem: View {
                 Spacer()
             
               
-                Text("\(myShoe.size!, specifier: "%.1f")")
+                Text("\(myShoe.size, specifier: "%.1f")")
                     .font(.headline)
                     .bold()
                     .padding(.trailing,24)
@@ -50,6 +50,6 @@ struct ShoeCollectionItem: View {
 
 struct ShoeCollectionCell_Previews: PreviewProvider {
     static var previews: some View {
-        ShoeCollectionItem(myShoe: ShoesCollection.MyShoe(id: "1", shoe: ShoesList.shoes[0], size: 9.0))
+        ShoeCollectionItem(myShoe: MyShoe(id: "1", shoe: Shoe(id: "1", model: "Air Max 97", brand: Brand(id: "1", name: "Nike", image: "nike"), image: "shoe"), size: 9.0))
     }
 }
