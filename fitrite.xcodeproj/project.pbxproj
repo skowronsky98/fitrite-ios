@@ -187,9 +187,9 @@
 		B7AC555E25FE76FD00DCA642 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B7CA774125DDA4D100ABF820 /* ShoeCollectionView.swift */,
 				B7A89C9B25FD1F59001FDFDB /* MyShoeDetailView.swift */,
 				B788C84E25F00E3800F1734D /* ShoeCollectionItemView.swift */,
-				B7CA774125DDA4D100ABF820 /* ShoeCollectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

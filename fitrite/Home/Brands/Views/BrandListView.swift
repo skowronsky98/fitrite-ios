@@ -14,7 +14,7 @@ struct BrandListView: View {
                     BrandItemView(brand: brand)
                     
                     NavigationLink(
-                        destination: Text("Shoes search")){
+                        destination: ShoesListView(shoeListManager: ShoesListManager(brands: brandListManager.brandList))){
                         EmptyView()
                     }
                 }
