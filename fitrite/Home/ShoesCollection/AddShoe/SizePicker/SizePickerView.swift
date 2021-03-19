@@ -1,7 +1,9 @@
 import SwiftUI
 
-struct SwiftUIView: View {
+struct SizePickerView: View {
     var myShoe : MyShoe
+    
+    @ObservedObject var addShoeManager : SizePickerManager
     
     var body: some View {
         VStack {
@@ -19,10 +21,9 @@ struct SwiftUIView: View {
         }
     }
 }
-
-struct SwiftUIView_Previews: PreviewProvider {
+struct AddShoeView_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIView(myShoe: ShoesCollection.Shoes[0])
+        SizePickerView(myShoe: ShoesCollection.Shoes[0], addShoeManager: SizePickerManager())
     }
 }
 

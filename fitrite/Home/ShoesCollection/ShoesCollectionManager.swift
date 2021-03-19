@@ -8,15 +8,7 @@ class ShoesCollectionManager: ObservableObject {
     
     
     init() {
-        shoesCollectionModel = ShoesCollection(
-            Array(
-                arrayLiteral: MyShoe(id: "1", shoe: Shoe(id: "1", model: "Air Max 97", brand: Brand(id: "1", name: "Nike", image: "nike"), image: "shoe"), size: 8.0),
-                MyShoe(id: "2", shoe: Shoe(id: "2", model: "Air Force 1", brand: Brand(id: "1", name: "Nike", image: "nike"), image: "shoe"), size: 8.0),
-                MyShoe(id: "3", shoe: Shoe(id: "2", model: "Air Force 1", brand: Brand(id: "1", name: "Nike", image: "nike"), image: "shoe"), size: 9.0),
-                MyShoe(id: "4", shoe: Shoe(id: "3", model: "Yeezy Boost 350", brand: Brand(id: "2", name: "Adidas", image: "adidas"), image: "shoe"), size: 10.0)
-            )
-                
-                )
+        shoesCollectionModel = ShoesCollection(ShoesCollection.Shoes)
     }
     
     func remove(shoe: MyShoe) {

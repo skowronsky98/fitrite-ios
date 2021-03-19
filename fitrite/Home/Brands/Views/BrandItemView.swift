@@ -51,6 +51,6 @@ struct BrandItemView: View {
 
 struct BrandItemView_Previews: PreviewProvider {
     static var previews: some View {
-        BrandItemView(brand: Brand(id: "1", name:"Nike", image:"nike"))
+        BrandItemView(brand: BrandList.Brands[0])
     }
 }

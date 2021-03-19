@@ -34,7 +34,7 @@ struct ShoeCollectionItem: View {
                 Spacer()
             
               
-                Text("\(myShoe.size, specifier: "%.1f")")
+                Text("\(myShoe.size.us, specifier: "%.1f")")
                     .font(.headline)
                     .bold()
                     .padding(.trailing,24)
@@ -50,6 +50,6 @@ struct ShoeCollectionItem: View {
 
 struct ShoeCollectionCell_Previews: PreviewProvider {
     static var previews: some View {
-        ShoeCollectionItem(myShoe: MyShoe(id: "1", shoe: Shoe(id: "1", model: "Air Max 97", brand: Brand(id: "1", name: "Nike", image: "nike"), image: "shoe"), size: 9.0))
+        ShoeCollectionItem(myShoe: ShoesCollection.Shoes[0])
     }
 }

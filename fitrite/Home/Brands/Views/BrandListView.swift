@@ -14,7 +14,7 @@ struct BrandListView: View {
                     BrandItemView(brand: brand)
                     
                     NavigationLink(
-                        destination: ShoesListView(shoeListManager: ShoesListManager(brands: brandListManager.brandList, brand: brand))){
+                        destination: ShoesListView(shoeListManager: ShoesListManager(brand: brand))){
                         EmptyView()
                     }
                 }

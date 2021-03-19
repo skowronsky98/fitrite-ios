@@ -15,11 +15,8 @@ struct ShoesListView: View {
         
         List{
             ForEach(shoeListManager.shoes){ shoe in
-                
-                
+
                 ShoeListItemView(shoe: shoe)
-                
-                
                 
             }
         }.navigationBarTitle("Choose Model")
@@ -29,10 +26,7 @@ struct ShoesListView: View {
 
 struct ShoesListView_Previews: PreviewProvider {
     static var previews: some View {
-        ShoesListView(shoeListManager: ShoesListManager(brands: Array(
-                                                            arrayLiteral: Brand(id: "1", name: "Nike", image: "nike"),
-                                                            Brand(id: "2", name: "Adidas", image: "adidas"),
-                                                            Brand(id: "3", name: "Jordan", image: "jordan"))))
+        ShoesListView(shoeListManager: ShoesListManager())
         
     }
 }
