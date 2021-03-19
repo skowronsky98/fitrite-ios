@@ -22,7 +22,7 @@ struct ShoesListView: View {
                 
                 
             }
-        }.navigationBarTitle("Chose Model")
+        }.navigationBarTitle("Choose Model")
         
     }
 }
