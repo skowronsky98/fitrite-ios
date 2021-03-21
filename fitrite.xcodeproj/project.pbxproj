@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6783D0DF1425B989C1D7F20E /* Pods_fitriteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8079FC697008CF01F83EBE /* Pods_fitriteTests.framework */; };
+		AD88EB2464FE01E85E627E45 /* Pods_fitrite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B154086F4DA2D86B2049E5A5 /* Pods_fitrite.framework */; };
 		B73B5A5C260532EE00FDA9A4 /* SizeChartCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B5A5B260532EE00FDA9A4 /* SizeChartCollection.swift */; };
 		B76470F825E13650003054A6 /* ShoeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76470F725E13650003054A6 /* ShoeCell.swift */; };
 		B764710E25E13E95003054A6 /* ShoesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B764710D25E13E95003054A6 /* ShoesList.swift */; };
@@ -15,16 +17,16 @@
 		B774DEF125FD2D4400938BBF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B774DEF025FD2D4400938BBF /* ProfileView.swift */; };
 		B774DEFC25FD3BBE00938BBF /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B774DEFB25FD3BBE00938BBF /* DiscoverView.swift */; };
 		B774DF0425FE371600938BBF /* ShoesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B774DF0325FE371600938BBF /* ShoesListView.swift */; };
+		B775C665260550270020C4D1 /* SizeChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B775C664260550270020C4D1 /* SizeChartManager.swift */; };
 		B788C82125E947C500F1734D /* ShoesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788C82025E947C500F1734D /* ShoesCollection.swift */; };
 		B788C83025E952A900F1734D /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788C82F25E952A900F1734D /* Array+Identifiable.swift */; };
 		B788C84225E985FE00F1734D /* BrandListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788C84125E985FE00F1734D /* BrandListView.swift */; };
 		B788C84F25F00E3800F1734D /* ShoeCollectionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788C84E25F00E3800F1734D /* ShoeCollectionItemView.swift */; };
-		B790850B2604E83100205640 /* IndicateSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790850A2604E83100205640 /* IndicateSizeView.swift */; };
-		B79085172604E8DA00205640 /* IndicateSizeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79085162604E8DA00205640 /* IndicateSizeManager.swift */; };
 		B79085202604EB3B00205640 /* SizePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790851F2604EB3B00205640 /* SizePickerView.swift */; };
 		B79085292604EB6D00205640 /* SizePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79085282604EB6D00205640 /* SizePickerManager.swift */; };
 		B7930FB725FAB8C700AEAE44 /* BrandItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7930FB625FAB8C700AEAE44 /* BrandItemView.swift */; };
 		B7930FC025FABBE200AEAE44 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7930FBF25FABBE200AEAE44 /* NavView.swift */; };
+		B79BB09E26067672002868B4 /* SizeChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79BB09D26067672002868B4 /* SizeChartView.swift */; };
 		B7AC556225FE775A00DCA642 /* ShoesListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC556125FE775A00DCA642 /* ShoesListManager.swift */; };
 		B7AC556D25FE77A900DCA642 /* BrandListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC556C25FE77A900DCA642 /* BrandListManager.swift */; };
 		B7AC557B25FE789600DCA642 /* ShoeListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC557A25FE789600DCA642 /* ShoeListItemView.swift */; };
@@ -37,6 +39,10 @@
 		B7CA774D25DDA4D300ABF820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CA774B25DDA4D300ABF820 /* LaunchScreen.storyboard */; };
 		B7CA775825DDA4D300ABF820 /* fitriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA775725DDA4D300ABF820 /* fitriteTests.swift */; };
 		B7CA776325DDA4D300ABF820 /* fitriteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA776225DDA4D300ABF820 /* fitriteUITests.swift */; };
+		B7D10EFB2607A862004CC5A6 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D10EFA2607A862004CC5A6 /* GridLayout.swift */; };
+		B7D10F012607AB21004CC5A6 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D10F002607AB21004CC5A6 /* Grid.swift */; };
+		B7D10F0F2607B7A3004CC5A6 /* SizeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D10F0E2607B7A3004CC5A6 /* SizeItemView.swift */; };
+		F5BBC738B7313529A404FA09 /* Pods_fitrite_fitriteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88ABCCC0F8D3386D6DC4A40 /* Pods_fitrite_fitriteUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E1E04A18ED6306A7FAC946E /* Pods-fitriteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitriteTests.debug.xcconfig"; path = "Target Support Files/Pods-fitriteTests/Pods-fitriteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		16A47F95B125E8035B795869 /* Pods-fitriteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitriteUITests.debug.xcconfig"; path = "Target Support Files/Pods-fitriteUITests/Pods-fitriteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3866ECE1C944BD91B6108F6C /* Pods-fitrite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitrite.debug.xcconfig"; path = "Target Support Files/Pods-fitrite/Pods-fitrite.debug.xcconfig"; sourceTree = "<group>"; };
+		7F5527C6F9AF87F8BCD36AA4 /* Pods-fitrite-fitriteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitrite-fitriteUITests.debug.xcconfig"; path = "Target Support Files/Pods-fitrite-fitriteUITests/Pods-fitrite-fitriteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8F379BC931BF8C5A3F5F14BB /* Pods-fitriteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitriteUITests.release.xcconfig"; path = "Target Support Files/Pods-fitriteUITests/Pods-fitriteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9C8079FC697008CF01F83EBE /* Pods_fitriteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fitriteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B154086F4DA2D86B2049E5A5 /* Pods_fitrite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fitrite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B73B5A5B260532EE00FDA9A4 /* SizeChartCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeChartCollection.swift; sourceTree = "<group>"; };
 		B76470F725E13650003054A6 /* ShoeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeCell.swift; sourceTree = "<group>"; };
 		B764710D25E13E95003054A6 /* ShoesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesList.swift; sourceTree = "<group>"; };
@@ -65,16 +78,16 @@
 		B774DEF025FD2D4400938BBF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B774DEFB25FD3BBE00938BBF /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		B774DF0325FE371600938BBF /* ShoesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesListView.swift; sourceTree = "<group>"; };
+		B775C664260550270020C4D1 /* SizeChartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeChartManager.swift; sourceTree = "<group>"; };
 		B788C82025E947C500F1734D /* ShoesCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesCollection.swift; sourceTree = "<group>"; };
 		B788C82F25E952A900F1734D /* Array+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
 		B788C84125E985FE00F1734D /* BrandListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandListView.swift; sourceTree = "<group>"; };
 		B788C84E25F00E3800F1734D /* ShoeCollectionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeCollectionItemView.swift; sourceTree = "<group>"; };
-		B790850A2604E83100205640 /* IndicateSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateSizeView.swift; sourceTree = "<group>"; };
-		B79085162604E8DA00205640 /* IndicateSizeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateSizeManager.swift; sourceTree = "<group>"; };
 		B790851F2604EB3B00205640 /* SizePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePickerView.swift; sourceTree = "<group>"; };
 		B79085282604EB6D00205640 /* SizePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePickerManager.swift; sourceTree = "<group>"; };
 		B7930FB625FAB8C700AEAE44 /* BrandItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandItemView.swift; sourceTree = "<group>"; };
 		B7930FBF25FABBE200AEAE44 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+		B79BB09D26067672002868B4 /* SizeChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeChartView.swift; sourceTree = "<group>"; };
 		B7AC556125FE775A00DCA642 /* ShoesListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesListManager.swift; sourceTree = "<group>"; };
 		B7AC556C25FE77A900DCA642 /* BrandListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandListManager.swift; sourceTree = "<group>"; };
 		B7AC557A25FE789600DCA642 /* ShoeListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeListItemView.swift; sourceTree = "<group>"; };
@@ -93,6 +106,13 @@
 		B7CA775E25DDA4D300ABF820 /* fitriteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fitriteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7CA776225DDA4D300ABF820 /* fitriteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fitriteUITests.swift; sourceTree = "<group>"; };
 		B7CA776425DDA4D300ABF820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7D10EFA2607A862004CC5A6 /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
+		B7D10F002607AB21004CC5A6 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		B7D10F0E2607B7A3004CC5A6 /* SizeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeItemView.swift; sourceTree = "<group>"; };
+		BD713EF9B4DC5304AA7BFCC1 /* Pods-fitrite-fitriteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitrite-fitriteUITests.release.xcconfig"; path = "Target Support Files/Pods-fitrite-fitriteUITests/Pods-fitrite-fitriteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C10FD3CAF2E7D53E53147549 /* Pods-fitrite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitrite.release.xcconfig"; path = "Target Support Files/Pods-fitrite/Pods-fitrite.release.xcconfig"; sourceTree = "<group>"; };
+		CA83E96995C570EE13A2DECD /* Pods-fitriteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitriteTests.release.xcconfig"; path = "Target Support Files/Pods-fitriteTests/Pods-fitriteTests.release.xcconfig"; sourceTree = "<group>"; };
+		D88ABCCC0F8D3386D6DC4A40 /* Pods_fitrite_fitriteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fitrite_fitriteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD88EB2464FE01E85E627E45 /* Pods_fitrite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6783D0DF1425B989C1D7F20E /* Pods_fitriteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,16 +136,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BBC738B7313529A404FA09 /* Pods_fitrite_fitriteUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63E169C1853CCBA88E6C05B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3866ECE1C944BD91B6108F6C /* Pods-fitrite.debug.xcconfig */,
+				C10FD3CAF2E7D53E53147549 /* Pods-fitrite.release.xcconfig */,
+				7F5527C6F9AF87F8BCD36AA4 /* Pods-fitrite-fitriteUITests.debug.xcconfig */,
+				BD713EF9B4DC5304AA7BFCC1 /* Pods-fitrite-fitriteUITests.release.xcconfig */,
+				0E1E04A18ED6306A7FAC946E /* Pods-fitriteTests.debug.xcconfig */,
+				CA83E96995C570EE13A2DECD /* Pods-fitriteTests.release.xcconfig */,
+				16A47F95B125E8035B795869 /* Pods-fitriteUITests.debug.xcconfig */,
+				8F379BC931BF8C5A3F5F14BB /* Pods-fitriteUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6A42A6065B98E63700D62B2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B154086F4DA2D86B2049E5A5 /* Pods_fitrite.framework */,
+				9C8079FC697008CF01F83EBE /* Pods_fitriteTests.framework */,
+				D88ABCCC0F8D3386D6DC4A40 /* Pods_fitrite_fitriteUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B71CC8612607E5080084BCAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B7D10F0E2607B7A3004CC5A6 /* SizeItemView.swift */,
+				B79BB09D26067672002868B4 /* SizeChartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B73B5A5A260532D200FDA9A4 /* SizeChart */ = {
 			isa = PBXGroup;
 			children = (
+				B71CC8612607E5080084BCAB /* Views */,
 				B73B5A5B260532EE00FDA9A4 /* SizeChartCollection.swift */,
+				B775C664260550270020C4D1 /* SizeChartManager.swift */,
 			);
 			path = SizeChart;
 			sourceTree = "<group>";
@@ -139,7 +198,7 @@
 		B788C83725E9594400F1734D /* ShoesCollection */ = {
 			isa = PBXGroup;
 			children = (
-				B790851E2604EAF300205640 /* AddShoe */,
+				B79085242604EB4200205640 /* SizeIndicator */,
 				B7AC555E25FE76FD00DCA642 /* Views */,
 				B788C82025E947C500F1734D /* ShoesCollection.swift */,
 				B764712125E15692003054A6 /* ShoesCollectionManager.swift */,
@@ -157,39 +216,14 @@
 			path = Brands;
 			sourceTree = "<group>";
 		};
-		B79085092604E76900205640 /* IndicateSize */ = {
-			isa = PBXGroup;
-			children = (
-				B79085152604E8BF00205640 /* Views */,
-				B79085162604E8DA00205640 /* IndicateSizeManager.swift */,
-			);
-			path = IndicateSize;
-			sourceTree = "<group>";
-		};
-		B79085152604E8BF00205640 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				B790850A2604E83100205640 /* IndicateSizeView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		B790851E2604EAF300205640 /* AddShoe */ = {
+		B79085242604EB4200205640 /* SizeIndicator */ = {
 			isa = PBXGroup;
 			children = (
 				B73B5A5A260532D200FDA9A4 /* SizeChart */,
-				B79085242604EB4200205640 /* SizePicker */,
-			);
-			path = AddShoe;
-			sourceTree = "<group>";
-		};
-		B79085242604EB4200205640 /* SizePicker */ = {
-			isa = PBXGroup;
-			children = (
 				B79085282604EB6D00205640 /* SizePickerManager.swift */,
 				B790851F2604EB3B00205640 /* SizePickerView.swift */,
 			);
-			path = SizePicker;
+			path = SizeIndicator;
 			sourceTree = "<group>";
 		};
 		B7930FBE25FABBCA00AEAE44 /* MainNavigation */ = {
@@ -204,8 +238,8 @@
 			isa = PBXGroup;
 			children = (
 				B7AC556025FE773B00DCA642 /* Views */,
-				B764710D25E13E95003054A6 /* ShoesList.swift */,
 				B7AC556125FE775A00DCA642 /* ShoesListManager.swift */,
+				B764710D25E13E95003054A6 /* ShoesList.swift */,
 			);
 			path = ShoesList;
 			sourceTree = "<group>";
@@ -229,7 +263,6 @@
 		B7A89CA925FD2A63001FDFDB /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				B79085092604E76900205640 /* IndicateSize */,
 				B788C83725E9594400F1734D /* ShoesCollection */,
 				B7A89CA025FD2275001FDFDB /* ShoesList */,
 				B788C84625EBC84D00F1734D /* Brands */,
@@ -258,8 +291,8 @@
 		B7AC556025FE773B00DCA642 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B774DF0325FE371600938BBF /* ShoesListView.swift */,
 				B7AC557A25FE789600DCA642 /* ShoeListItemView.swift */,
+				B774DF0325FE371600938BBF /* ShoesListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -271,6 +304,8 @@
 				B7CA775625DDA4D300ABF820 /* fitriteTests */,
 				B7CA776125DDA4D300ABF820 /* fitriteUITests */,
 				B7CA773B25DDA4D100ABF820 /* Products */,
+				63E169C1853CCBA88E6C05B4 /* Pods */,
+				6A42A6065B98E63700D62B2E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -291,6 +326,7 @@
 				B7A89CA925FD2A63001FDFDB /* Home */,
 				B7A89CA825FD2A4F001FDFDB /* Discover */,
 				B7A89CA725FD2A44001FDFDB /* Profile */,
+				B7D10EFF2607AAFF004CC5A6 /* UIUtills */,
 				B788C82E25E9528D00F1734D /* Utills */,
 				B7CA773D25DDA4D100ABF820 /* AppDelegate.swift */,
 				B7CA773F25DDA4D100ABF820 /* SceneDelegate.swift */,
@@ -330,6 +366,15 @@
 			path = fitriteUITests;
 			sourceTree = "<group>";
 		};
+		B7D10EFF2607AAFF004CC5A6 /* UIUtills */ = {
+			isa = PBXGroup;
+			children = (
+				B7D10EFA2607A862004CC5A6 /* GridLayout.swift */,
+				B7D10F002607AB21004CC5A6 /* Grid.swift */,
+			);
+			path = UIUtills;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -337,9 +382,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7CA776725DDA4D300ABF820 /* Build configuration list for PBXNativeTarget "fitrite" */;
 			buildPhases = (
+				B6AB7585837EC05D4B884DC5 /* [CP] Check Pods Manifest.lock */,
 				B7CA773625DDA4D100ABF820 /* Sources */,
 				B7CA773725DDA4D100ABF820 /* Frameworks */,
 				B7CA773825DDA4D100ABF820 /* Resources */,
+				2A2FAD77F95D6646BFCB7846 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,6 +401,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7CA776A25DDA4D300ABF820 /* Build configuration list for PBXNativeTarget "fitriteTests" */;
 			buildPhases = (
+				8CEB8146C0232A8012D67390 /* [CP] Check Pods Manifest.lock */,
 				B7CA774F25DDA4D300ABF820 /* Sources */,
 				B7CA775025DDA4D300ABF820 /* Frameworks */,
 				B7CA775125DDA4D300ABF820 /* Resources */,
@@ -372,9 +420,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7CA776D25DDA4D300ABF820 /* Build configuration list for PBXNativeTarget "fitriteUITests" */;
 			buildPhases = (
+				4F3377CFF5A33ED47F1CA911 /* [CP] Check Pods Manifest.lock */,
 				B7CA775A25DDA4D300ABF820 /* Sources */,
 				B7CA775B25DDA4D300ABF820 /* Frameworks */,
 				B7CA775C25DDA4D300ABF820 /* Resources */,
+				CF08397972E8E627918B0321 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -455,6 +505,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A2FAD77F95D6646BFCB7846 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fitrite/Pods-fitrite-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fitrite/Pods-fitrite-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fitrite/Pods-fitrite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F3377CFF5A33ED47F1CA911 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fitrite-fitriteUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CEB8146C0232A8012D67390 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fitriteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6AB7585837EC05D4B884DC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fitrite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF08397972E8E627918B0321 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fitrite-fitriteUITests/Pods-fitrite-fitriteUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fitrite-fitriteUITests/Pods-fitrite-fitriteUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fitrite-fitriteUITests/Pods-fitrite-fitriteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B7CA773625DDA4D100ABF820 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -462,7 +615,6 @@
 			files = (
 				B764710E25E13E95003054A6 /* ShoesList.swift in Sources */,
 				B774DEFC25FD3BBE00938BBF /* DiscoverView.swift in Sources */,
-				B790850B2604E83100205640 /* IndicateSizeView.swift in Sources */,
 				B7AC556D25FE77A900DCA642 /* BrandListManager.swift in Sources */,
 				B76470F825E13650003054A6 /* ShoeCell.swift in Sources */,
 				B7CA773E25DDA4D100ABF820 /* AppDelegate.swift in Sources */,
@@ -473,15 +625,19 @@
 				B7AC556225FE775A00DCA642 /* ShoesListManager.swift in Sources */,
 				B79085292604EB6D00205640 /* SizePickerManager.swift in Sources */,
 				B788C84225E985FE00F1734D /* BrandListView.swift in Sources */,
-				B79085172604E8DA00205640 /* IndicateSizeManager.swift in Sources */,
+				B7D10EFB2607A862004CC5A6 /* GridLayout.swift in Sources */,
 				B7930FC025FABBE200AEAE44 /* NavView.swift in Sources */,
 				B788C83025E952A900F1734D /* Array+Identifiable.swift in Sources */,
 				B774DEF125FD2D4400938BBF /* ProfileView.swift in Sources */,
 				B764711925E14071003054A6 /* BrandList.swift in Sources */,
+				B79BB09E26067672002868B4 /* SizeChartView.swift in Sources */,
 				B7CA774225DDA4D100ABF820 /* ShoeCollectionView.swift in Sources */,
+				B775C665260550270020C4D1 /* SizeChartManager.swift in Sources */,
+				B7D10F012607AB21004CC5A6 /* Grid.swift in Sources */,
 				B7CA774525DDA4D100ABF820 /* fitrite.xcdatamodeld in Sources */,
 				B774DF0425FE371600938BBF /* ShoesListView.swift in Sources */,
 				B7930FB725FAB8C700AEAE44 /* BrandItemView.swift in Sources */,
+				B7D10F0F2607B7A3004CC5A6 /* SizeItemView.swift in Sources */,
 				B788C84F25F00E3800F1734D /* ShoeCollectionItemView.swift in Sources */,
 				B7AC557B25FE789600DCA642 /* ShoeListItemView.swift in Sources */,
 				B764712225E15692003054A6 /* ShoesCollectionManager.swift in Sources */,
@@ -649,6 +805,7 @@
 		};
 		B7CA776825DDA4D300ABF820 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3866ECE1C944BD91B6108F6C /* Pods-fitrite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -671,6 +828,7 @@
 		};
 		B7CA776925DDA4D300ABF820 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C10FD3CAF2E7D53E53147549 /* Pods-fitrite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -693,6 +851,7 @@
 		};
 		B7CA776B25DDA4D300ABF820 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E1E04A18ED6306A7FAC946E /* Pods-fitriteTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -715,6 +874,7 @@
 		};
 		B7CA776C25DDA4D300ABF820 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA83E96995C570EE13A2DECD /* Pods-fitriteTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -737,6 +897,7 @@
 		};
 		B7CA776E25DDA4D300ABF820 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F5527C6F9AF87F8BCD36AA4 /* Pods-fitrite-fitriteUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -757,6 +918,7 @@
 		};
 		B7CA776F25DDA4D300ABF820 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD713EF9B4DC5304AA7BFCC1 /* Pods-fitrite-fitriteUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

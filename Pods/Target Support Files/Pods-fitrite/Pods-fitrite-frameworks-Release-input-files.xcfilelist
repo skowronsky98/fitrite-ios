@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-fitrite/Pods-fitrite-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ExyteGrid/ExyteGrid.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SDWebImageSwiftUI/SDWebImageSwiftUI.framework
+${BUILT_PRODUCTS_DIR}/SwiftUIPager/SwiftUIPager.framework

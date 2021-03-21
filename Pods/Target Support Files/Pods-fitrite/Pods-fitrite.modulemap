@@ -1,0 +1,6 @@
+framework module Pods_fitrite {
+  umbrella header "Pods-fitrite-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-fitriteTests/Pods-fitriteTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SDWebImageSwiftUI/SDWebImageSwiftUI.framework
+${BUILT_PRODUCTS_DIR}/SwiftUIPager/SwiftUIPager.framework

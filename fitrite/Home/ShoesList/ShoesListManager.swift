@@ -3,7 +3,7 @@ import Foundation
 class ShoesListManager : ObservableObject {
     @Published private var shoesListModel : ShoesList
     
-    var chosenBrand :Brand?
+    private var chosenBrand:Brand?
     
     
     init() {
