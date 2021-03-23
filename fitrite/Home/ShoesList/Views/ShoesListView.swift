@@ -9,18 +9,29 @@ import SwiftUI
 
 struct ShoesListView: View {
     
+    @EnvironmentObject private var shoesCollectionManager: ShoesCollectionManager
     @ObservedObject var shoeListManager : ShoesListManager
+    
     
     var body: some View {
         
         List{
             ForEach(shoeListManager.shoes){ shoe in
+            
+                ZStack {
+                    ShoeListItemView(shoe: shoe)
 
-                ShoeListItemView(shoe: shoe)
+                    NavigationLink(
+                        destination: SizeIndicatorView(sizeIndicatorManager: SizeIndicatorManager(shoe: shoe))){
+                        EmptyView()
+                    }
+                }
                 
             }
+           
         }.navigationBarTitle("Choose Model")
-        
+       
+       
     }
 }
 

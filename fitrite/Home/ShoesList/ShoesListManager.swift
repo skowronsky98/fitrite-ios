@@ -1,9 +1,9 @@
 import Foundation
 
 class ShoesListManager : ObservableObject {
-    @Published private var shoesListModel : ShoesList
+    private var shoesListModel : ShoesList
     
-    private var chosenBrand:Brand?
+    private var chosenBrand: Brand?
     
     
     init() {
@@ -17,10 +17,11 @@ class ShoesListManager : ObservableObject {
         
     }
     
-    
-    
     var shoes : [Shoe] {
-        shoesListModel.shoes.filter { $0.brand.id == chosenBrand?.id}
+        if chosenBrand != nil {
+           return shoesListModel.shoes.filter { $0.brand.id == chosenBrand?.id}
+        }
+        return shoesListModel.shoes
     }
     
     

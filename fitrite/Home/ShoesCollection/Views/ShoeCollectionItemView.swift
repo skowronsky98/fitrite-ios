@@ -45,6 +45,7 @@ struct ShoeCollectionItem: View {
         }
         .fixedSize(horizontal: false, vertical: true)
         .padding(.vertical,4)
+    
     }
 }
 

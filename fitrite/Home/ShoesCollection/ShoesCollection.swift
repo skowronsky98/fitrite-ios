@@ -30,7 +30,7 @@ struct ShoesCollection{
 }
 
 struct MyShoe : Identifiable, Codable {
-    let id : String
-    let shoe: Shoe
+    var id : String
+    var shoe: Shoe
     var size: SizeChart
 }

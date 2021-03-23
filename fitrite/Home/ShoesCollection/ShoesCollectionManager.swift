@@ -4,9 +4,6 @@ class ShoesCollectionManager: ObservableObject {
     
     @Published private var shoesCollectionModel : ShoesCollection 
     
-    var myShoeTmp : MyShoe?
-    
-    
     init() {
         shoesCollectionModel = ShoesCollection(ShoesCollection.Shoes)
     }
@@ -25,14 +22,16 @@ class ShoesCollectionManager: ObservableObject {
         shoesCollectionModel.addShoeToCollection(myShoe)
     }
     
+    func addShoeToCollection(id: String, shoe: Shoe, size: SizeChart) {
+        shoesCollectionModel.addShoeToCollection(MyShoe(id: id, shoe: shoe, size: size))
+    }
+    
     var shoesCollection : [MyShoe]{
         shoesCollectionModel.shoesCollection
     }
     
-    func addShoeToCollection() {
-        
-    }
     
+   
 }
 
 

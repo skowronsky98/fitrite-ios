@@ -11,8 +11,6 @@ struct SizeItemView: View {
     var size : String
 
     var body: some View {
-        
-        
       
             ZStack{
                 RoundedRectangle(cornerRadius: 5, style: .continuous)
@@ -24,16 +22,9 @@ struct SizeItemView: View {
                     Text("\(size)")
                         .font(.headline)
                         .bold()
-                            
                 }
-                
             }
-            .frame(width: 80, height: 50, alignment: .center)
-            
-        
-        
-       
-       
+           
     }
 }
 struct SizeItemView_Previews: PreviewProvider {

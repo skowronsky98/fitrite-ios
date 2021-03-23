@@ -4,8 +4,6 @@ struct SizeChartCollection{
     static var SizeCharts = [SizeChart] (arrayLiteral:
                                             SizeChart(id: "a", eu: "40.5", type: "m", uk: 8.0, us: 9.0, brand: BrandList.Brands[0]),
                                             SizeChart(id: "s", eu: "41", type: "m", uk: 8.5, us: 9.9, brand: BrandList.Brands[0]),
-                                            SizeChart(id: "d", eu: "42.5", type: "m", uk: 8.0, us: 9.0, brand: BrandList.Brands[0]),
-                                            SizeChart(id: "f", eu: "43", type: "m", uk: 8.5, us: 9.9, brand: BrandList.Brands[0]),
                                             SizeChart(id: "1", eu: "40.5", type: "m", uk: 8.0, us: 9.0, brand: BrandList.Brands[0]),
                                             SizeChart(id: "2", eu: "41", type: "m", uk: 8.5, us: 9.9, brand: BrandList.Brands[0]),
                                             SizeChart(id: "3", eu: "42.5", type: "m", uk: 8.0, us: 9.0, brand: BrandList.Brands[0]),

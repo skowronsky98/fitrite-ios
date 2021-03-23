@@ -23,34 +23,31 @@ struct SizeChartView: View {
             .pickerStyle(SegmentedPickerStyle())
             
             
+            
             switch authPath {
             case 0:
                 Grid(sizeChartManager.sizeChartCollection, tracks: 4) { item in
                     SizeItemView(size: item.eu)
                     
                 }
-//                .animation(.default)
-//                .transition(.move(edge: .leading))
-//
+                .animation(.default)
+                .transition(.move(edge: .leading))
                 
             case 1:
                 Grid(sizeChartManager.sizeChartCollection, tracks: 4) { item in
                     SizeItemView(size: String(item.us))
                     
                 }
-//                .animation(.default)
-//                .transition(.move(edge: .leading))
-                
-                
-                
+                .animation(.default)
+                .transition(.move(edge: .leading))
                 
             case 2:
                 Grid(sizeChartManager.sizeChartCollection, tracks: 4) { item in
                     SizeItemView(size: String(item.uk))
                     
                 }
-//                .animation(.default)
-//                .transition(.move(edge: .leading))
+                .animation(.default)
+                .transition(.move(edge: .leading))
                 
                 
             default:

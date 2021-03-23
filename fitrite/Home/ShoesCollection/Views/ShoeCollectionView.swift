@@ -2,8 +2,11 @@ import SwiftUI
 
 struct ShoeCollectionView: View {
     
+   
+    
     @EnvironmentObject private var shoeCollectionManager : ShoesCollectionManager
     @State var isAddNewShoeLinkActive = false
+    
     
     var body: some View {
         
@@ -40,9 +43,7 @@ struct ShoeCollectionView: View {
                                                 .font(.largeTitle)
                                             
                                         }
-                                    }
-                                
-            )
+                                    })
             
             
         }

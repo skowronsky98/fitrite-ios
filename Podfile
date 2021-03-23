@@ -13,7 +13,6 @@ target 'fitrite' do
   
   target 'fitriteTests' do
     inherit! :search_paths
-	
     # Pods for testing
   end
 

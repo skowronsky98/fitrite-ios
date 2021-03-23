@@ -9,7 +9,7 @@ import Foundation
 
 class BrandListManager: ObservableObject {
     
-    @Published private var brandListModel : BrandList
+    private var brandListModel : BrandList
     
     init() {
         brandListModel = BrandList(Array(

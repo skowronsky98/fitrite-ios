@@ -2,7 +2,7 @@ import SwiftUI
 
 struct BrandListView: View {
     
-    @EnvironmentObject private var shoeCollectionManager : ShoesCollectionManager
+   
     @ObservedObject var brandListManager : BrandListManager
     
     var body: some View{
