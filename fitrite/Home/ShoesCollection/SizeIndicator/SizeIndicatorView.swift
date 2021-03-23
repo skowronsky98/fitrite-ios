@@ -9,12 +9,18 @@ struct SizeIndicatorView: View {
     
     @ObservedObject private var sizeChartManager = SizeChartManager()
     
+    @State private var sizeIndex = 0
+    
     var body: some View {
+        
         VStack {
+           
             Image("\(sizeIndicatorManager.shoe.image)")
                 .resizable()
                 .scaledToFit()
                 .fixedSize(horizontal: false, vertical: true)
+                .frame(height:220)
+                
             
             
             Text("\(sizeIndicatorManager.shoe.model)")
@@ -24,24 +30,28 @@ struct SizeIndicatorView: View {
             
             Text("\(sizeIndicatorManager.shoe.brand.name)")
                 .font(.headline)
-               
             
-            SizeChartView(sizeChartManager: sizeChartManager).padding(.top,16).padding(.horizontal)
-            
-           
-                Button(action: {
-                    shoesCollectionManager.addShoeToCollection(id: shoesCollectionManager.randomString(length: 6), shoe: sizeIndicatorManager.shoe, size: SizeChartCollection.SizeCharts[0])
-                    self.presentationMode.wrappedValue.dismiss()
-                
-                }) {
-                    Text("Add to Collection")
-                }.padding()
-            
- 
             Spacer()
             
+            SizeChartView(sizeChartManager: sizeChartManager, sizeIndex: $sizeIndex).padding(.top,16).padding(.horizontal)
+            
+            Spacer()
+            
+            Button(action: {
+                print(sizeIndex)
+                shoesCollectionManager.addShoeToCollection(id: shoesCollectionManager.randomString(length: 6), shoe: sizeIndicatorManager.shoe, size: SizeChartCollection.SizeCharts[sizeIndex])
+                self.presentationMode.wrappedValue.dismiss()
+                
+            }) {
+                Text("Add to Collection")
+            }.padding(.bottom)
+           
+           
+          
+            
+            
         }.navigationBarTitle("Choose Size")
-       
+        
     }
 }
 struct AddShoeView_Previews: PreviewProvider {

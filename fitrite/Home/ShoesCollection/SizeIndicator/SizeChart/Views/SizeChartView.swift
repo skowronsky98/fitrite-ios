@@ -13,6 +13,8 @@ struct SizeChartView: View {
     
     @State private var authPath = 1
     
+    @Binding var sizeIndex: Int
+    
     var body: some View {
         VStack(alignment: .leading) {
             Picker(selection: $authPath, label: Text("Authentication Path")) {
@@ -26,28 +28,35 @@ struct SizeChartView: View {
             
             switch authPath {
             case 0:
-                Grid(sizeChartManager.sizeChartCollection, tracks: 4) { item in
-                    SizeItemView(size: item.eu)
-                    
+                Picker("US", selection: $sizeIndex){
+                    ForEach(0..<sizeChartManager.sizeChartCollection.count) {
+                        Text("\(sizeChartManager.sizeChartCollection[$0].eu)").tag($0)
+                    }
                 }
-                .animation(.default)
-                .transition(.move(edge: .leading))
+                .frame(height: 120)
+                .pickerStyle(WheelPickerStyle())
+                .clipped()
                 
             case 1:
-                Grid(sizeChartManager.sizeChartCollection, tracks: 4) { item in
-                    SizeItemView(size: String(item.us))
-                    
+                Picker("US", selection: $sizeIndex){
+                    ForEach(0..<sizeChartManager.sizeChartCollection.count) {
+                        Text("\(String(sizeChartManager.sizeChartCollection[$0].us))").tag($0)
+                    }
                 }
-                .animation(.default)
-                .transition(.move(edge: .leading))
+                .frame(height: 120)
+                .pickerStyle(WheelPickerStyle())
+                .clipped()
+                           
                 
             case 2:
-                Grid(sizeChartManager.sizeChartCollection, tracks: 4) { item in
-                    SizeItemView(size: String(item.uk))
-                    
+                Picker("US", selection: $sizeIndex){
+                    ForEach(0..<sizeChartManager.sizeChartCollection.count) {
+                        Text("\(String(sizeChartManager.sizeChartCollection[$0].uk))").tag($0)
+                    }
                 }
-                .animation(.default)
-                .transition(.move(edge: .leading))
+                .frame(height: 120)
+                .pickerStyle(WheelPickerStyle())
+                .clipped()
                 
                 
             default:
@@ -62,7 +71,7 @@ struct SizeChartView: View {
 }
 struct SizeChartView_Previews: PreviewProvider {
     static var previews: some View {
-        SizeChartView(sizeChartManager: SizeChartManager())
+        SizeChartView(sizeChartManager: SizeChartManager(), sizeIndex: .constant(0))
     }
 }
 

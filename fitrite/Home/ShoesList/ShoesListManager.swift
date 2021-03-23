@@ -1,7 +1,7 @@
 import Foundation
 
 class ShoesListManager : ObservableObject {
-    private var shoesListModel : ShoesList
+    @Published private var shoesListModel : ShoesList
     
     private var chosenBrand: Brand?
     
