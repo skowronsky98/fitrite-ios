@@ -6,9 +6,9 @@ target 'fitrite' do
   use_frameworks!
 
   # Pods for fitrite
-  pod 'SwiftUIPager'
+ 
   pod 'SDWebImageSwiftUI'
-  pod 'ExyteGrid'
+
   
   
   target 'fitriteTests' do

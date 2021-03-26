@@ -11,6 +11,7 @@ struct ShoesListView: View {
     
     @EnvironmentObject private var shoesCollectionManager: ShoesCollectionManager
     @ObservedObject var shoeListManager : ShoesListManager
+    @Binding var addNewShoe: Bool
     
     
     var body: some View {
@@ -20,11 +21,15 @@ struct ShoesListView: View {
             
                 ZStack {
                     ShoeListItemView(shoe: shoe)
-
-                    NavigationLink(
-                        destination: SizeIndicatorView(sizeIndicatorManager: SizeIndicatorManager(shoe: shoe))){
-                        EmptyView()
+                    
+                    if addNewShoe {
+                        NavigationLink(
+                            destination: SizeIndicatorView(sizeIndicatorManager: SizeIndicatorManager(shoe: shoe))){
+                            EmptyView()
+                        }
                     }
+                    
+                    
                 }
                 
             }
@@ -37,7 +42,7 @@ struct ShoesListView: View {
 
 struct ShoesListView_Previews: PreviewProvider {
     static var previews: some View {
-        ShoesListView(shoeListManager: ShoesListManager())
+        ShoesListView(shoeListManager: ShoesListManager(), addNewShoe: .constant(true))
         
     }
 }

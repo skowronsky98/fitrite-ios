@@ -2,11 +2,8 @@ import SwiftUI
 
 struct ShoeCollectionView: View {
     
-   
-    
     @EnvironmentObject private var shoeCollectionManager : ShoesCollectionManager
-    @State var isAddNewShoeLinkActive = false
-    
+    @State var addNewShoe = false
     
     var body: some View {
         
@@ -18,7 +15,7 @@ struct ShoeCollectionView: View {
                         ShoeCollectionItem(myShoe: shoe)
                         
                         NavigationLink(
-                            destination: BrandListView(brandListManager: BrandListManager())){
+                            destination: BrandListView(brandListManager: BrandListManager(), addNewShoe: $addNewShoe)){
                             
                             EmptyView()
                         }
@@ -34,20 +31,24 @@ struct ShoeCollectionView: View {
             .listStyle(PlainListStyle())
             .navigationBarTitle("Collection")
             .navigationBarItems(trailing:
-                                    NavigationLink(destination: BrandListView(brandListManager: BrandListManager()), isActive : $isAddNewShoeLinkActive){
+                                    NavigationLink(destination: BrandListView(
+                                                    brandListManager: BrandListManager(),
+                                                    addNewShoe: $addNewShoe),
+                                                   isActive : $addNewShoe){
                                         Button(action: {
-                                            
-                                            self.isAddNewShoeLinkActive = true
+                                            self.addNewShoe = true
                                         }) {
                                             Image(systemName: "plus.app")
                                                 .font(.largeTitle)
                                             
                                         }
-                                    })
+                                                   })
             
             
         }
     }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

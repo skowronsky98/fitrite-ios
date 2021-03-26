@@ -4,6 +4,7 @@ struct BrandListView: View {
     
    
     @ObservedObject var brandListManager : BrandListManager
+    @Binding var addNewShoe: Bool
     
     var body: some View{
         
@@ -14,7 +15,7 @@ struct BrandListView: View {
                     BrandItemView(brand: brand)
                     
                     NavigationLink(
-                        destination: ShoesListView(shoeListManager: ShoesListManager(brand: brand))){
+                        destination: ShoesListView(shoeListManager: ShoesListManager(brand: brand), addNewShoe: $addNewShoe)){
                         EmptyView()
                     }
                 }
@@ -27,6 +28,6 @@ struct BrandListView: View {
 
 struct BrandListView_Previews: PreviewProvider {
     static var previews: some View {
-        BrandListView(brandListManager: BrandListManager())
+        BrandListView(brandListManager: BrandListManager(), addNewShoe: .constant(true))
     }
 }

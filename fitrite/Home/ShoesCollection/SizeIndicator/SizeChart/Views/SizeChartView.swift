@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import ExyteGrid
+
 
 struct SizeChartView: View {
     @ObservedObject var sizeChartManager : SizeChartManager
