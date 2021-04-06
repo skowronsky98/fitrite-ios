@@ -3,6 +3,8 @@ import Foundation
 struct BrandList {
     
     var brands = [Brand]()
+    
+    
         
     static var Brands = [Brand] (arrayLiteral: Brand(id: "1", name: "Nike", media: Media(imageUrl: "", smallImageUrl: "nike", thumbUrl: "")),
                                  Brand(id: "2", name: "Adidas", media: Media(imageUrl: "", smallImageUrl: "adidas", thumbUrl: "")),
@@ -19,6 +21,9 @@ struct BrandList {
     
     init(){
     }
+    
+  
+
 }
 
 
@@ -34,7 +39,7 @@ struct Brand: Codable, Identifiable{
     }
 }
 
-typealias Welcome = [Brand]
+//typealias Welcome = [Brand]
 
 
 
