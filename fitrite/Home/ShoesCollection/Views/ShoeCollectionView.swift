@@ -5,6 +5,8 @@ struct ShoeCollectionView: View {
     @EnvironmentObject private var shoeCollectionManager : ShoesCollectionManager
     @State var addNewShoe = false
     
+    @ObservedObject var brandListManager = BrandListManager()
+    
     var body: some View {
         
         NavigationView{
@@ -15,7 +17,7 @@ struct ShoeCollectionView: View {
                         ShoeCollectionItem(myShoe: shoe)
                         
                         NavigationLink(
-                            destination: BrandListView(brandListManager: BrandListManager(), addNewShoe: $addNewShoe)){
+                            destination: BrandListView(brandListManager: brandListManager, myShoe: shoe)){
                             
                             EmptyView()
                         }
@@ -31,9 +33,7 @@ struct ShoeCollectionView: View {
             .listStyle(PlainListStyle())
             .navigationBarTitle("Collection")
             .navigationBarItems(trailing:
-                                    NavigationLink(destination: BrandListView(
-                                                    brandListManager: BrandListManager(),
-                                                    addNewShoe: $addNewShoe),
+                                    NavigationLink(destination: BrandListView(brandListManager: brandListManager),
                                                    isActive : $addNewShoe){
                                         Button(action: {
                                             self.addNewShoe = true

@@ -1,13 +1,12 @@
+//
+//  SizeIndicatorManager.swift
+//  fitrite
+//
+//  Created by Oskar Skowronski on 26/03/2021.
+//
+
 import Foundation
 
-class SizeIndicatorManager: ObservableObject{
-    var shoe: Shoe
-    
-    init(shoe: Shoe) {
-        self.shoe = shoe
-    }
-
-    
-    
+class SizeIndicatorManager: ObservableObject {
     
 }

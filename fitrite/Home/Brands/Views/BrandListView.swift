@@ -4,18 +4,29 @@ struct BrandListView: View {
     
    
     @ObservedObject var brandListManager : BrandListManager
-    @Binding var addNewShoe: Bool
+    
+    var myShoe : MyShoe? = nil
     
     var body: some View{
         
         List{
+            
+            ZStack {
+                
+                BrandItemView(brand: Brand(id: "", name: "All", media: Media(imageUrl: "", smallImageUrl: "infinity", thumbUrl: "")))
+                              
+                NavigationLink(
+                    destination: ShoesListView(shoeListManager: ShoesListManager(), myShoe: myShoe)){
+                    EmptyView()
+                }
+            }
+                    
             ForEach(brandListManager.brandList){ brand in
                 
                 ZStack {
                     BrandItemView(brand: brand)
-                    
                     NavigationLink(
-                        destination: ShoesListView(shoeListManager: ShoesListManager(brand: brand), addNewShoe: $addNewShoe)){
+                        destination: ShoesListView(shoeListManager: ShoesListManager(), myShoe: myShoe)){
                         EmptyView()
                     }
                 }
@@ -24,10 +35,11 @@ struct BrandListView: View {
         
         
     }
+    
 }
 
 struct BrandListView_Previews: PreviewProvider {
     static var previews: some View {
-        BrandListView(brandListManager: BrandListManager(), addNewShoe: .constant(true))
+        BrandListView(brandListManager: BrandListManager())
     }
 }

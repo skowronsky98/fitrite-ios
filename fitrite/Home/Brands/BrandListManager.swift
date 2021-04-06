@@ -12,10 +12,14 @@ class BrandListManager: ObservableObject {
     @Published private var brandListModel : BrandList
     
     init() {
-        brandListModel = BrandList(Array(
-                                    arrayLiteral: Brand(id: "1", name: "Nike", image: "nike"),
-                                    Brand(id: "2", name: "Adidas", image: "adidas"),
-                                    Brand(id: "3", name: "Jordan", image: "jordan")))
+//        brandListModel = BrandList(Array(
+//                                    arrayLiteral: Brand(id: "1", name: "Nike", image: "nike"),
+//                                    Brand(id: "2", name: "Adidas", image: "adidas"),
+//                                    Brand(id: "3", name: "Jordan", image: "jordan")))
+        
+        
+        brandListModel = BrandList()
+       
     }
     
     var brandList: [Brand]{

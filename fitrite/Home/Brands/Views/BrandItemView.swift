@@ -20,11 +20,11 @@ struct BrandItemView: View {
 
             HStack {
                
-                Image("\(brand.image)")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 120, height: 120)
-                    .padding(.horizontal,16)
+//                Image("\(brand.image)")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: 120, height: 120)
+//                    .padding(.horizontal,16)
                 
                 VStack {
                     Text("\(brand.name)")

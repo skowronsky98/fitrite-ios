@@ -7,29 +7,25 @@
 
 import SwiftUI
 
-struct WishListCollectionView: View {
+struct WishListView: View {
     
     
     var body: some View {
         
         NavigationView{
-            ScrollView(.horizontal){
+           
                 
-                HStack {
+                List {
                     ForEach(ShoesList.Shoes){ shoe in
                         ShoeListItemView(shoe: shoe)
                         
                     }
               
                 }
-                Spacer()
-            }
-            .listStyle(PlainListStyle())
-            .navigationBarTitle("Wish List")
-
-            
-            
-        }
+                .navigationBarTitle("Wish List")
+           
+            }.listStyle(PlainListStyle())
+        
         
     }
 }
@@ -37,6 +33,6 @@ struct WishListCollectionView: View {
 
 struct WishListCollection_Previews: PreviewProvider {
     static var previews: some View {
-        WishListCollectionView()
+        WishListView()
     }
 }
