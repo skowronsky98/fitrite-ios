@@ -37,6 +37,7 @@
 		B7AC556225FE775A00DCA642 /* ShoesListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC556125FE775A00DCA642 /* ShoesListManager.swift */; };
 		B7AC556D25FE77A900DCA642 /* BrandListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC556C25FE77A900DCA642 /* BrandListManager.swift */; };
 		B7AC557B25FE789600DCA642 /* ShoeListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC557A25FE789600DCA642 /* ShoeListItemView.swift */; };
+		B7C3ABF4261D9ADF00ED32D9 /* ImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C3ABF3261D9ADF00ED32D9 /* ImageURL.swift */; };
 		B7CA773E25DDA4D100ABF820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA773D25DDA4D100ABF820 /* AppDelegate.swift */; };
 		B7CA774025DDA4D100ABF820 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA773F25DDA4D100ABF820 /* SceneDelegate.swift */; };
 		B7CA774225DDA4D100ABF820 /* ShoeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA774125DDA4D100ABF820 /* ShoeCollectionView.swift */; };
@@ -105,6 +106,7 @@
 		B7AC556125FE775A00DCA642 /* ShoesListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesListManager.swift; sourceTree = "<group>"; };
 		B7AC556C25FE77A900DCA642 /* BrandListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandListManager.swift; sourceTree = "<group>"; };
 		B7AC557A25FE789600DCA642 /* ShoeListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeListItemView.swift; sourceTree = "<group>"; };
+		B7C3ABF3261D9ADF00ED32D9 /* ImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURL.swift; sourceTree = "<group>"; };
 		B7CA773A25DDA4D100ABF820 /* fitrite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fitrite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7CA773D25DDA4D100ABF820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7CA773F25DDA4D100ABF820 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				B7A9389126176B1F00855AC7 /* APIController.swift */,
+				B7C3ABF3261D9ADF00ED32D9 /* ImageURL.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -661,6 +664,7 @@
 				B764710E25E13E95003054A6 /* ShoesList.swift in Sources */,
 				B774DEFC25FD3BBE00938BBF /* DiscoverView.swift in Sources */,
 				B7AC556D25FE77A900DCA642 /* BrandListManager.swift in Sources */,
+				B7C3ABF4261D9ADF00ED32D9 /* ImageURL.swift in Sources */,
 				B76470F825E13650003054A6 /* ShoeCell.swift in Sources */,
 				B7CA773E25DDA4D100ABF820 /* AppDelegate.swift in Sources */,
 				B79085202604EB3B00205640 /* AddShoeToCollectionView.swift in Sources */,

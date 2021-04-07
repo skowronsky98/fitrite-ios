@@ -13,7 +13,7 @@ struct BrandListView: View {
             
             ZStack {
                 
-                BrandItemView(brand: Brand(id: "", name: "All", media: Media(imageUrl: "", smallImageUrl: "infinity", thumbUrl: "")))
+                BrandItemView(brand: Brand(id: "", name: "All", media: Media(imageUrl: "infinity", smallImageUrl: "", thumbUrl: "")))
                               
                 NavigationLink(
                     destination: ShoesListView(shoeListManager: ShoesListManager(), myShoe: myShoe)){
