@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct BrandItemView: View {
 
@@ -19,13 +20,19 @@ struct BrandItemView: View {
              
 
             HStack {
-               
-                ImageURL("\(brand.media.imageUrl)")
-//                    .resizable()
+                
+                WebImage(url: URL(string: "\(brand.media.imageUrl)"))
+                    .resizable()
                     .scaledToFit()
                     .frame(width: 120, height: 120)
                     .padding(.horizontal,16)
-                
+               
+//                ImageURL("\(brand.media.imageUrl)")
+////                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: 120, height: 120)
+//                    .padding(.horizontal,16)
+//
                 VStack {
                     Text("\(brand.name)")
                         .font(.title)

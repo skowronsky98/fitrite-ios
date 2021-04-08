@@ -11,15 +11,15 @@ struct BrandListView: View {
         
         List{
             
-            ZStack {
-                
-                BrandItemView(brand: Brand(id: "", name: "All", media: Media(imageUrl: "infinity", smallImageUrl: "", thumbUrl: "")))
-                              
-                NavigationLink(
-                    destination: ShoesListView(shoeListManager: ShoesListManager(), myShoe: myShoe)){
-                    EmptyView()
-                }
-            }
+//            ZStack {
+//                
+//                BrandItemView(brand: Brand(id: "", name: "All", media: Media(imageUrl: "infinity", smallImageUrl: "", thumbUrl: "")))
+//                              
+//                NavigationLink(
+//                    destination: ShoesListView(shoeListManager: ShoesListManager(), myShoe: myShoe)){
+//                    EmptyView()
+//                }
+//            }
                     
             ForEach(brandListManager.brandList){ brand in
                 
