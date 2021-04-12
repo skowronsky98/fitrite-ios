@@ -1,4 +1,5 @@
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct AddShoeToCollectionView: View {
     
@@ -14,8 +15,7 @@ struct AddShoeToCollectionView: View {
     var body: some View {
         
         VStack {
-           
-            Image("\(sizeIndicatorManager.shoe.image)")
+            WebImage(url: URL(string: "\(sizeIndicatorManager.shoe.media.imageUrl)"))
                 .resizable()
                 .scaledToFit()
                 .fixedSize(horizontal: false, vertical: true)
@@ -28,8 +28,8 @@ struct AddShoeToCollectionView: View {
                 .fontWeight(.semibold)
                 .padding(2)
             
-            Text("\(sizeIndicatorManager.shoe.brand.name)")
-                .font(.headline)
+//            Text("\(sizeIndicatorManager.shoe.brand.name)")
+//                .font(.headline)
             
             Spacer()
             

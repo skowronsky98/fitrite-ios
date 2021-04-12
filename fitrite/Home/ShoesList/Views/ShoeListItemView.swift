@@ -1,11 +1,5 @@
-//
-//  ShoeListItemView.swift
-//  fitrite
-//
-//  Created by Oskar Skowronski on 14/03/2021.
-//
-
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct ShoeListItemView: View {
     var shoe : Shoe
@@ -18,7 +12,7 @@ struct ShoeListItemView: View {
                
                 
             HStack{
-                Image("\(shoe.image)")
+                WebImage(url: URL(string: "\(shoe.media.imageUrl)"))
                     .resizable()
                     .scaledToFit()
                     .frame(width: 120, height: 120)

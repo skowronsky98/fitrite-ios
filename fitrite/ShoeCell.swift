@@ -1,4 +1,5 @@
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct ShoeCell: View {
     
@@ -12,7 +13,7 @@ struct ShoeCell: View {
                 .padding(.horizontal,8)
                 
             HStack{
-                Image("\(shoe.image)")
+                WebImage(url: URL(string: "\(shoe.media.imageUrl)"))
                     .resizable()
                     .scaledToFit()
                     .frame(width: 120, height: 120)
@@ -23,8 +24,8 @@ struct ShoeCell: View {
                         .bold()
                         .padding(.bottom,1)
                         
-                    Text("\(shoe.brand.name)")
-                        .font(.subheadline)
+//                    Text("\(shoe.brand.name)")
+//                        .font(.subheadline)
                     
                     Spacer()
                 }.padding()

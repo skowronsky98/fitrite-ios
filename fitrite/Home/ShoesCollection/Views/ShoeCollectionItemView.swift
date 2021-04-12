@@ -1,4 +1,5 @@
 import SwiftUI
+import SDWebImageSwiftUI
 
 
 struct ShoeCollectionItem: View {
@@ -13,7 +14,7 @@ struct ShoeCollectionItem: View {
                
                 
             HStack{
-                Image("\(myShoe.shoe.image)")
+                WebImage(url: URL(string: "\(myShoe.shoe.media.imageUrl)"))
                     .resizable()
                     .scaledToFit()
                     .frame(width: 120, height: 120)

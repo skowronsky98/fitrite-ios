@@ -4,9 +4,9 @@ struct BrandListView: View {
     
    
     @ObservedObject var brandListManager : BrandListManager
-    
+    @ObservedObject private var shoeListManager = ShoesListManager()
     var myShoe : MyShoe? = nil
-    
+        
     var body: some View{
         
         List{
@@ -26,12 +26,16 @@ struct BrandListView: View {
                 ZStack {
                     BrandItemView(brand: brand)
                     NavigationLink(
-                        destination: ShoesListView(shoeListManager: ShoesListManager(), myShoe: myShoe)){
+                        destination: ShoesListView(shoeListManager: shoeListManager, myShoe: myShoe)){
                         EmptyView()
                     }
                 }
             }
         }.navigationBarTitle("Brands")
+        .onAppear(){
+            shoeListManager.fetchShoes(brands: brandListManager.brandList)
+//            APIController().loadShoesAPI()
+        }
         
         
     }

@@ -50,6 +50,7 @@
 		B7D10EFB2607A862004CC5A6 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D10EFA2607A862004CC5A6 /* GridLayout.swift */; };
 		B7D10F012607AB21004CC5A6 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D10F002607AB21004CC5A6 /* Grid.swift */; };
 		B7D10F0F2607B7A3004CC5A6 /* SizeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D10F0E2607B7A3004CC5A6 /* SizeItemView.swift */; };
+		B7D2CA8726249AAD009CD7CF /* ShoeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D2CA8626249AAD009CD7CF /* ShoeDTO.swift */; };
 		F5BBC738B7313529A404FA09 /* Pods_fitrite_fitriteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88ABCCC0F8D3386D6DC4A40 /* Pods_fitrite_fitriteUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +126,7 @@
 		B7D10EFA2607A862004CC5A6 /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
 		B7D10F002607AB21004CC5A6 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		B7D10F0E2607B7A3004CC5A6 /* SizeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeItemView.swift; sourceTree = "<group>"; };
+		B7D2CA8626249AAD009CD7CF /* ShoeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeDTO.swift; sourceTree = "<group>"; };
 		BD713EF9B4DC5304AA7BFCC1 /* Pods-fitrite-fitriteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitrite-fitriteUITests.release.xcconfig"; path = "Target Support Files/Pods-fitrite-fitriteUITests/Pods-fitrite-fitriteUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C10FD3CAF2E7D53E53147549 /* Pods-fitrite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitrite.release.xcconfig"; path = "Target Support Files/Pods-fitrite/Pods-fitrite.release.xcconfig"; sourceTree = "<group>"; };
 		CA83E96995C570EE13A2DECD /* Pods-fitriteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitriteTests.release.xcconfig"; path = "Target Support Files/Pods-fitriteTests/Pods-fitriteTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -308,13 +310,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		B7A9389026176B0200855AC7 /* API */ = {
+		B7A9389026176B0200855AC7 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				B7D2CA8526249A9A009CD7CF /* DTO */,
 				B7A9389126176B1F00855AC7 /* APIController.swift */,
 				B7C3ABF3261D9ADF00ED32D9 /* ImageURL.swift */,
 			);
-			path = API;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		B7AC555E25FE76FD00DCA642 /* Views */ = {
@@ -369,7 +372,7 @@
 		B7CA773C25DDA4D100ABF820 /* fitrite */ = {
 			isa = PBXGroup;
 			children = (
-				B7A9389026176B0200855AC7 /* API */,
+				B7A9389026176B0200855AC7 /* Network */,
 				B7930FBE25FABBCA00AEAE44 /* MainNavigation */,
 				B7A89CA925FD2A63001FDFDB /* Home */,
 				B7A89CA825FD2A4F001FDFDB /* Discover */,
@@ -421,6 +424,14 @@
 				B7D10F002607AB21004CC5A6 /* Grid.swift */,
 			);
 			path = UIUtills;
+			sourceTree = "<group>";
+		};
+		B7D2CA8526249A9A009CD7CF /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				B7D2CA8626249AAD009CD7CF /* ShoeDTO.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -683,6 +694,7 @@
 				B7D10EFB2607A862004CC5A6 /* GridLayout.swift in Sources */,
 				B7930FC025FABBE200AEAE44 /* NavView.swift in Sources */,
 				B788C83025E952A900F1734D /* Array+Identifiable.swift in Sources */,
+				B7D2CA8726249AAD009CD7CF /* ShoeDTO.swift in Sources */,
 				B774DEF125FD2D4400938BBF /* ProfileView.swift in Sources */,
 				B764711925E14071003054A6 /* BrandList.swift in Sources */,
 				B79BB09E26067672002868B4 /* SizeChartView.swift in Sources */,

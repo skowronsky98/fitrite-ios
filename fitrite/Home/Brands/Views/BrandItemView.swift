@@ -20,13 +20,13 @@ struct BrandItemView: View {
              
 
             HStack {
-                
-                WebImage(url: URL(string: "\(brand.media.imageUrl)"))
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 120, height: 120)
-                    .padding(.horizontal,16)
-               
+                if brand.media.imageUrl != "" {
+                    WebImage(url: URL(string: "\(brand.media.imageUrl)"))
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 120, height: 120)
+                        .padding(.horizontal,16)
+                }
 //                ImageURL("\(brand.media.imageUrl)")
 ////                    .resizable()
 //                    .scaledToFit()

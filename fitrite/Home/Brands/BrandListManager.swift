@@ -17,8 +17,10 @@ class BrandListManager: ObservableObject {
     init() {
 
         brandListModel = BrandList()
+        print("brand list manager init")
         fetchBrands()
        
+      
     }
     
     
