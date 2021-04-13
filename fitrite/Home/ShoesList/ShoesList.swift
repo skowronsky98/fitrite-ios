@@ -20,6 +20,12 @@ struct ShoesList {
     mutating func fetchShoes(shoes: [Shoe]){
         self.shoes = shoes
     }
+    
+    func getShoesByBrand(brand: Brand) -> [Shoe] {
+        return shoes.filter { (shoe) -> Bool in
+            shoe.brand.id == brand.id
+        }
+    }
 }
 
 struct Shoe : Codable, Identifiable{

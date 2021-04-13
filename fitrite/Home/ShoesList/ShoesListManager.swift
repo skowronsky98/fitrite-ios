@@ -33,14 +33,15 @@ class ShoesListManager : ObservableObject {
         
     }
     
+    
     var shoes : [Shoe] {
-        if chosenBrand != nil {
-            return shoesListModel.shoes.filter { $0.brand.id == chosenBrand?.id}
-        }
+//        if chosenBrand != nil {
+//            return shoesListModel.shoes.filter { $0.brand.id == chosenBrand?.id}
+//        }
         return shoesListModel.shoes
     }
     
-    
+
 }
 
 typealias Welcome = [Shoe]
